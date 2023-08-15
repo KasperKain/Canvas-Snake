@@ -181,6 +181,7 @@ export default class GameScene {
   drawDebug() {
     const debugVel = `[${this.snake.velocity.x} ${this.snake.velocity.y}]  `;
     const debugPos = `[${this.snake.head.position.x} ${this.snake.head.position.y}] `;
+    const debugFood = `[${this.food.position.x} ${this.food.position.y}]`;
     const segmentLength = `Length: [${this.snake.snakeBody.length - 1}]`;
     this.ctx.fillStyle = "rgba(0, 0, 0, 1)";
     this.ctx.font = "14px 'Press Start 2P', cursive";
@@ -189,7 +190,13 @@ export default class GameScene {
     this.ctx.textAlign = "right";
     this.ctx.fillText(
       `${debugVel}`,
-      this.canvas.width - 20,
+      this.canvas.width,
+      this.canvas.height - 20
+    );
+    this.ctx.textAlign = "center";
+    this.ctx.fillText(
+      `${debugFood}`,
+      this.canvas.width / 2,
       this.canvas.height - 20
     );
 

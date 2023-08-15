@@ -76,6 +76,15 @@ const debugOptions = [
     step: 1,
   },
   {
+    name: "Sprite Scale",
+    type: "range",
+    value: Settings.spriteScale,
+    id: "sprite-scale",
+    min: 0,
+    max: 3,
+    step: 0.1,
+  },
+  {
     name: "Sun Glare",
     type: "range",
     value: Settings.sunGlare,
@@ -136,6 +145,9 @@ document.getElementById("animation-time").addEventListener("input", (e) => {
 document.getElementById("game-time").addEventListener("input", (e) => {
   Settings.gameTime = e.target.value;
 });
+document.getElementById("sprite-scale").addEventListener("input", (e) => {
+  Settings.spriteScale = e.target.value;
+});
 
 document.getElementById("debug-mode").addEventListener("change", (e) => {
   Settings.debugMode = e.target.checked;
@@ -153,3 +165,4 @@ attachRangeInputHandler("sun-glare");
 attachRangeInputHandler("sfx-volume");
 attachRangeInputHandler("animation-time");
 attachRangeInputHandler("game-time");
+attachRangeInputHandler("sprite-scale");

@@ -1,6 +1,7 @@
 export default {
   gameWidth: 320,
   gameHeight: 288,
+  spriteScale: 1.5,
   tiles: 6,
   gameTime: 20,
   animationTime: 4,
