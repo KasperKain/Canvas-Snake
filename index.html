@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module" defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="gameboy">
+      <p>press D key for debug options</p>
+      <div class="screen-border">
+        <canvas></canvas>
+      </div>
+      <div class="controls-container">
+        <div class="d-pad">
+          <div class="center-d-pad d-pad-button"></div>
+          <div class="left-d-pad d-pad-button"></div>
+          <div class="right-d-pad d-pad-button"></div>
+          <div class="up-d-pad d-pad-button"></div>
+          <div class="down-d-pad d-pad-button"></div>
+        </div>
+        <div class="buttons-1">
+          <div class="a-button"></div>
+          <div class="b-button"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="debug-menu" class="debug-menu"></div>
+  </body>
+</html>
