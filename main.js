@@ -14,7 +14,7 @@ canvas.height = Settings.gameHeight;
 ctx.fillStyle = "#828a63";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 ctx.fillStyle = "rgba(0, 0, 0, 1)";
-ctx.font = "13px 'Press Start 2P', cursive";
+ctx.font = "20px 'Courier New'";
 ctx.textAlign = "center";
 ctx.fillText("PRESS SPACEBAR", canvas.width / 2, canvas.height / 2);
 
