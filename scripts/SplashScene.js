@@ -23,7 +23,7 @@ export default class SplashScene {
     this.fadeDuration = 2000;
 
     this.bgImage = new Image();
-    this.bgImage.src = "assets/backgrounds/BGSplash.png";
+    this.bgImage.src = "./assets/backgrounds/BGSplash.png";
 
     this.animate();
     this.hasPlayedSound = false;
