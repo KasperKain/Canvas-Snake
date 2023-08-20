@@ -10,15 +10,6 @@ p {
   font-family: monospace;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(100, 97, 97);
-}
-
 canvas {
   border-top: 3px solid rgba(0, 0, 0, 0.233);
   border-right: 3px solid rgba(0, 0, 0, 0.233);
